@@ -1,0 +1,25 @@
+- [x] Create index.html with required sections/content
+- [x] Create styles.css with premium dark responsive design and animations
+- [x] Create script.js for interactions (mobile nav, reveal, tilt, year)
+- [x] Upgrade index.html to high-end agency composition
+- [x] Upgrade styles.css to premium visual system and micro-interactions
+- [x] Upgrade script.js with subtle parallax polish
+- [x] Update portfolio contact section to WhatsApp-only (remove form)
+- [x] Adjust portfolio contact styling for single-card layout
+- [x] Build IronFit Gym demo in `gymdemo.html`
+- [x] Build IronFit styles in `gymdemo.css`
+- [x] Build IronFit interactions in `gymdemo.js`
+- [x] Fix portfolio View Demo links to open real demo pages
+- [x] Replace law firm project with online shopping project in portfolio
+- [x] Build online shopping demo in `shoppingdemo.html`
+- [x] Build online shopping styles in `shoppingdemo.css`
+- [x] Build online shopping interactions in `shoppingdemo.js`
+- [x] Scale down overall UI sizing in portfolio, gym demo, and shopping demo
+- [x] Create Beauty Salon demo (`salondemo.html`, `salondemo.css`, `salondemo.js`)
+- [x] Link portfolio salon card "View Demo" to `salondemo.html`
+- [x] Ensure each demo has a distinct CSS theme (gym, shopping, salon)
+- [ ] Enhance shopping demo UI theme and add more UX features
+- [ ] Implement real cart item list rendering with remove/clear/subtotal in JOD
+- [ ] Localize portfolio and all demos for Jordan market context
+- [ ] Run critical-path testing (core UI, nav anchors, key interactions)
+- [ ] Finalize and report completion

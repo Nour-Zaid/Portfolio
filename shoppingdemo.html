@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopSphere Jordan | Premium Online Store</title>
+  <meta name="description" content="Premium Jordan-focused online shopping experience with smart cart, filtering, sorting, and modern ecommerce UI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shoppingdemo.css">
+</head>
+<body>
+  <div class="promo-bar">🇯🇴 Free delivery in Amman above 35 JOD • Secure Checkout • Cash on Delivery</div>
+
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand">ShopSphere Jordan</a>
+      <nav class="nav" id="shopNav">
+        <a href="#products">Products</a>
+        <a href="#collections">Collections</a>
+        <a href="#offers">Offers</a>
+        <a href="#reviews">Reviews</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero reveal" id="home">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Jordan Online Store</p>
+          <h1>Modern Essentials for Everyday Life</h1>
+          <p>Discover curated fashion, electronics, and home products with fast delivery across Amman, Zarqa, Irbid, and Aqaba.</p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary">Shop Now</a>
+            <a href="#collections" class="btn btn-outline">Explore Collections</a>
+          </div>
+          <div class="search-wrap">
+            <input type="text" id="searchInput" placeholder="Search products...">
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Weekend Premium Picks</h3>
+          <p>Handpicked products with limited-time prices for Jordan shoppers.</p>
+          <ul>
+            <li>Fast local delivery</li>
+            <li>Secure payment options</li>
+            <li>Cash on Delivery available</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="collections">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Collections</p>
+          <h2>Shop by Lifestyle</h2>
+        </div>
+        <div class="collection-grid">
+          <article class="collection-card">
+            <h3>Urban Fashion</h3>
+            <p>Street-ready styles and essentials.</p>
+          </article>
+          <article class="collection-card">
+            <h3>Smart Tech</h3>
+            <p>Devices that make life easier.</p>
+          </article>
+          <article class="collection-card">
+            <h3>Modern Home</h3>
+            <p>Clean design for everyday comfort.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="categories">
+      <div class="container">
+        <div class="section-head controls-head">
+          <div>
+            <p class="eyebrow">Categories</p>
+            <h2>Browse Products</h2>
+          </div>
+          <div class="sort-wrap">
+            <label for="sortSelect">Sort</label>
+            <select id="sortSelect">
+              <option value="default">Featured</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="name">Name: A to Z</option>
+            </select>
+          </div>
+        </div>
+        <div class="cat-grid">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="fashion">Fashion</button>
+          <button class="chip" data-filter="electronics">Electronics</button>
+          <button class="chip" data-filter="home">Home</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="products">
+      <div class="container">
+        <div class="products-grid" id="productsGrid">
+          <article class="product-card" data-category="fashion" data-name="Premium Hoodie" data-price="35">
+            <span class="badge">Best Seller</span>
+            <img src="https://images.unsplash.com/photo-1578681994506-b8f463449011?auto=format&fit=crop&w=900&q=80" alt="Premium Hoodie">
+            <h3>Premium Hoodie</h3>
+            <p class="price">35 JOD</p>
+            <button class="btn btn-outline add-btn">Add to Cart</button>
+          </article>
+
+          <article class="product-card" data-category="fashion" data-name="Sport Sneakers" data-price="59">
+            <span class="badge">Hot</span>
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Sport Sneakers">
+            <h3>Sport Sneakers</h3>
+            <p class="price">59 JOD</p>
+            <button class="btn btn-outline add-btn">Add to Cart</button>
+          </article>
+
+          <article class="product-card" data-category="fashion" data-name="Classic Denim Jacket" data-price="48">
+            <span class="badge">New</span>
+            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80" alt="Classic Denim Jacket">
+            <h3>Classic Denim Jacket</h3>
+            <p class="price">48 JOD</p>
+            <button class="btn btn-outline add-btn">Add to Cart</button>
+          </article>
+
+          <article class="product-card" data-category="electronics" data-name="Smartphone Pro" data-price="399">
+            <span class="badge">Flagship</span>
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80" alt="Smartphone Pro">
+            <h3>Smartphone Pro</h3>
+            <p class="price">399 JOD</p>
+            <button class="btn btn-outline add-btn">Add to Cart</button>
+          </article>
+
+          <article class="product-card" data-category="electronics" data-name="Wireless Earbuds" data-price="79">
+            <span class="badge">Top Rated</span>
+            <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=900&q=80" alt="Wireless Earbuds">
+            <h3>Wireless Earbuds</h3>
+            <p class="price">79 JOD</p>
+            <button class="btn btn-outline add-btn">Add to Cart</button>
+          </article>
+
+          <article class="product-card" data-category="electronics" data-name="Smart Watch X" data-price="129">
+            <span class="badge">Popular</span>
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80" alt="Smart Watch X">
+            <h3>Smart Watch X</h3>
+            <p class="price">129 JOD</p>
+            <button class="btn btn-outline add-btn">Add to Cart</button>
+          </article>
+
+          <article class="product-card" data-category="home" data-name="Minimal Lamp" data-price="29">
+            <span class="badge">Trending</span>
+            <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=80" alt="Minimal Lamp">
+            <h3>Minimal Lamp</h3>
+            <p class="price">29 JOD</p>
+            <button class="btn btn-outline add-btn">Add to Cart</button>
+          </article>
+
+          <article class="product-card" data-category="home" data-name="Nordic Chair" data-price="95">
+            <span class="badge">Editor Pick</span>
+            <img src="https://images.unsplash.com/photo-1519947486511-46149fa0a254?auto=format&fit=crop&w=900&q=80" alt="Nordic Chair">
+            <h3>Nordic Chair</h3>
+            <p class="price">95 JOD</p>
+            <button class="btn btn-outline add-btn">Add to Cart</button>
+          </article>
+
+          <article class="product-card" data-category="home" data-name="Modern Coffee Table" data-price="120">
+            <span class="badge">Premium</span>
+            <img src="https://images.unsplash.com/photo-1532372576444-dda954194ad0?auto=format&fit=crop&w=900&q=80" alt="Modern Coffee Table">
+            <h3>Modern Coffee Table</h3>
+            <p class="price">120 JOD</p>
+            <button class="btn btn-outline add-btn">Add to Cart</button>
+          </article>
+
+          <article class="product-card" data-category="fashion" data-name="Everyday Backpack" data-price="39">
+            <span class="badge">Daily Use</span>
+            <img src="https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?auto=format&fit=crop&w=900&q=80" alt="Everyday Backpack">
+            <h3>Everyday Backpack</h3>
+            <p class="price">39 JOD</p>
+            <button class="btn btn-outline add-btn">Add to Cart</button>
+          </article>
+
+          <article class="product-card" data-category="electronics" data-name="Bluetooth Speaker" data-price="66">
+            <span class="badge">Sound+</span>
+            <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=900&q=80" alt="Bluetooth Speaker">
+            <h3>Bluetooth Speaker</h3>
+            <p class="price">66 JOD</p>
+            <button class="btn btn-outline add-btn">Add to Cart</button>
+          </article>
+
+          <article class="product-card" data-category="home" data-name="Soft Throw Blanket" data-price="24">
+            <span class="badge">Cozy</span>
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80" alt="Soft Throw Blanket">
+            <h3>Soft Throw Blanket</h3>
+            <p class="price">24 JOD</p>
+            <button class="btn btn-outline add-btn">Add to Cart</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal trust-section">
+      <div class="container trust-grid">
+        <article class="trust-card">
+          <h3>Fast Delivery</h3>
+          <p>Same-week delivery options in major Jordan cities.</p>
+        </article>
+        <article class="trust-card">
+          <h3>Secure Payments</h3>
+          <p>Trusted checkout with multiple payment choices.</p>
+        </article>
+        <article class="trust-card">
+          <h3>Easy Returns</h3>
+          <p>Simple return process for eligible products.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="offers">
+      <div class="container offer-card">
+        <h2>Special Offer for Jordan Customers</h2>
+        <p>Get 10% off your first order with code <strong>WELCOMEJO</strong></p>
+      </div>
+    </section>
+
+    <section class="section reveal" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Customer Reviews</p>
+          <h2>What Shoppers Say</h2>
+        </div>
+        <div class="reviews-grid">
+          <article class="review-card">
+            <p>"Smooth experience and fast delivery in Amman. Quality exceeded expectations."</p>
+            <h4>— Lina K.</h4>
+          </article>
+          <article class="review-card">
+            <p>"Great prices and premium feel. The cart and checkout flow is very clean."</p>
+            <h4>— Ahmad R.</h4>
+          </article>
+          <article class="review-card">
+            <p>"Best demo store UX I’ve seen. Product browsing is super easy."</p>
+            <h4>— Noor S.</h4>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal newsletter">
+      <div class="container newsletter-card">
+        <h2>Join Our Newsletter</h2>
+        <p>Get first access to new arrivals and exclusive Jordan-only offers.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+          <input type="email" placeholder="Enter your email" required>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-panel" id="cartPanel">
+    <div class="cart-head">
+      <h3>Your Cart</h3>
+      <button id="clearCartBtn" class="text-btn">Clear</button>
+    </div>
+    <ul id="cartItems" class="cart-items"></ul>
+    <p id="emptyCartMessage" class="empty-msg">No items yet.</p>
+    <div class="cart-footer">
+      <p>Subtotal: <strong><span id="cartSubtotal">0</span> JOD</strong></p>
+      <button class="btn btn-primary checkout-btn">Checkout</button>
+    </div>
+  </aside>
+
+  <script src="shoppingdemo.js"></script>
+</body>
+</html>
