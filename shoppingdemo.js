@@ -149,9 +149,7 @@ function renderCart() {
     price.textContent = `${item.price} JOD x ${item.qty}`;
 
     const qtyWrap = document.createElement("div");
-    qtyWrap.style.display = "flex";
-    qtyWrap.style.gap = "6px";
-    qtyWrap.style.marginTop = "6px";
+    qtyWrap.className = "qty-wrap";
 
     const minusBtn = document.createElement("button");
     minusBtn.className = "remove-item";
@@ -214,3 +212,11 @@ revealElements.forEach((el) => observer.observe(el));
 bindAddButtons();
 filterAndSortProducts();
 renderCart();
+
+const newsletterForm = document.getElementById("newsletterForm");
+newsletterForm?.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const success = document.getElementById("newsletterSuccess");
+  if (success) success.style.display = "block";
+  newsletterForm.reset();
+});

@@ -24,10 +24,5 @@ const observer = new IntersectionObserver(
 
 revealEls.forEach((el) => observer.observe(el));
 
-document.querySelectorAll('a[href="#join"]').forEach((btn) => {
-  btn.addEventListener("click", () => {
-    console.log("Join CTA clicked");
-  });
-});
 
 document.getElementById("year").textContent = new Date().getFullYear();

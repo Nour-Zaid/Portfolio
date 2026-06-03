@@ -191,3 +191,13 @@ h2 { font-size: clamp(1.5rem, 3.2vw, 2.2rem); }
     grid-template-columns: 1fr;
   }
 }
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 22px 0;
+  text-align: center;
+}
+.site-footer .footer-wrap p {
+  color: var(--muted);
+  font-size: 0.85rem;
+}

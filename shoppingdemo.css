@@ -639,3 +639,17 @@ h2 {
     bottom: 10px;
   }
 }
+
+.qty-wrap {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.newsletter-success {
+  display: none;
+  margin-top: 12px;
+  color: #4f46e5;
+  font-weight: 600;
+  font-size: 0.9rem;
+}

@@ -9,6 +9,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="shoppingdemo.css">
+  <meta property="og:title" content="ShopSphere Jordan | Premium Online Store" />
+  <meta property="og:description" content="Premium Jordan-focused online shopping with smart cart, filtering, sorting, and modern ecommerce UI." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 </head>
 <body>
   <div class="promo-bar">🇯🇴 Free delivery in Amman above 35 JOD • Secure Checkout • Cash on Delivery</div>
@@ -258,10 +262,11 @@
       <div class="container newsletter-card">
         <h2>Join Our Newsletter</h2>
         <p>Get first access to new arrivals and exclusive Jordan-only offers.</p>
-        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
-          <input type="email" placeholder="Enter your email" required>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
           <button class="btn btn-primary" type="submit">Subscribe</button>
         </form>
+        <p class="newsletter-success" id="newsletterSuccess">Thanks for subscribing!</p>
       </div>
     </section>
   </main>

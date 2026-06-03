@@ -23,3 +23,5 @@ const salonObserver = new IntersectionObserver(
 );
 
 revealNodes.forEach((el) => salonObserver.observe(el));
+
+document.getElementById("year").textContent = new Date().getFullYear();

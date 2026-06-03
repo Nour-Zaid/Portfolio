@@ -467,3 +467,22 @@ input:focus, textarea:focus {
     align-items: flex-start;
   }
 }
+
+.whatsapp-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 18px;
+}
+.whatsapp-numbers .whatsapp-btn {
+  margin-top: 0;
+}
+.service-card h3 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+.service-card p {
+  font-size: 0.88rem;
+  font-weight: 400;
+}
